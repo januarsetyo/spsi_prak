@@ -15,15 +15,23 @@ class AdminController extends Controller
     {
         return view('admin.admin');
     }
+    
+    public function kelolaDokumen()
+    {
+        return view('admin.dokumen');
+    }
 
     public function buatJadwal()
     {
         return view('admin.buat-jadwal');
     }
-    public function kelolaDokumen()
+
+    public function lihatJadwal()
     {
-        return view('admin.dokumen');
+        return view('admin.jadwal');
     }
+
+
 
 
     /**
