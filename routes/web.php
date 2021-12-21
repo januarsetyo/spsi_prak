@@ -18,5 +18,11 @@ use App\Http\Controllers\DosenController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/admin', [AdminController::class, 'index']);
+
 Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
 Route::get('/dosen', [DosenController::class, 'index']);
+
+Route::get('/admin', [AdminController::class, 'index']);
+Route::get('/admin', [AdminController::class, 'index']);
+Route::get('/admin', [AdminController::class, 'index']);
+

@@ -13,8 +13,26 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin/admin');
+        return view('admin.admin');
     }
+    
+    public function kelolaDokumen()
+    {
+        return view('admin.dokumen');
+    }
+
+    public function buatJadwal()
+    {
+        return view('admin.buat-jadwal');
+    }
+
+    public function lihatJadwal()
+    {
+        return view('admin.jadwal');
+    }
+
+
+
 
     /**
      * Show the form for creating a new resource.
