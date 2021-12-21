@@ -20,6 +20,8 @@
     <!-- Custom styles for this template-->
     <link href="./sb/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="img/unair.png" rel="shortcut icon"/>
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">

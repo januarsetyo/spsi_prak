@@ -18,6 +18,30 @@
       </tr>
     </thead>
     <tbody>
+        @foreach ($kecamatan as $datakecamatan)
+        <tr>
+            <td scope="row">{{ $datakecamatan->id}}</td>
+            <td scope="row">{{ $datakecamatan->nama }}</td>
+            <td scope="row">{{ $datakecamatan->alamat }}</td>
+            <td scope="row">{{ $datakecamatan->no_hp }}</td>
+            <td scope="row">{{ $datakecamatan->jenis_kelamin }}</td>
+            <td scope="row">{{ $datakecamatan->email }}</td>
+            <td scope="row">{{ $datakecamatan->created_at }}</td>
+            <td scope="row">{{ $datakecamatan->updated_at }}</td>
+            <td>
+              <form action="/edit-dosen" method="post" class="d-inline">
+                  @csrf
+                  <input type="hidden" name="id" value="{{ $datakecamatan->id }}">
+                  <button class="btn btn-primary tombol border-0">
+                      Edit
+                  </button>
+              </form>
+            </td>
+            <td>
+              <a href="/hapus-dosen{{$datakecamatan->id}}" class="btn btn-primary tombol border-0">Hapus</a>
+            </td>
+          </tr>
+        @endforeach
 
     </tbody>
   </table>
