@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Dokumen;
 use App\Models\Jadwal;
 
-class AdminController extends Controller
+class Admin extends Controller
 {
     /**
      * Display a listing of the resource.
