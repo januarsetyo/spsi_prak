@@ -5,15 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Dokumen extends Model
+class PAA extends Model
 {
-    protected $jadwal= 'sidang';
+    protected $paa= 'paa';
 
     protected $fillable =[
-        'ID_SIDANG',
-        'ID_DOSEN',
-        'NIM',
-        'JADWAL_SIDANG'
-
+        'ID_PAA',
+        'NAMA_PAA',
+        'NO_HP_PAA',
+        'JK_PAA',
+        'EMAIL_PAA'
     ];
 }

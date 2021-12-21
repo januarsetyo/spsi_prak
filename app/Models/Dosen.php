@@ -5,15 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Dokumen extends Model
+class Dosen extends Model
 {
-    protected $jadwal= 'sidang';
+    protected $dosen= 'dosen';
 
     protected $fillable =[
-        'ID_SIDANG',
         'ID_DOSEN',
-        'NIM',
-        'JADWAL_SIDANG'
-
+        'NAMA_DOSEN',
+        'ALAMAT_DOSEN',
+        'NO_HP_DOSEN',
+        'JK_DOSEN',
+        'EMAIL_DOSEN'
     ];
 }

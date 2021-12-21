@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Jadwal extends Model
 {
-    use HasFactory;
+    protected $jadwal= 'sidang';
+
+    protected $fillable =[
+        'ID_SIDANG',
+        'ID_DOSEN',
+        'NIM',
+        'JADWAL_SIDANG'
+    ];
 }
