@@ -17,12 +17,16 @@ use App\Http\Controllers\DosenController;
 */
 
 Route::get('/', [HomeController::class, 'index']);
-Route::get('/admin', [AdminController::class, 'index']);
 
-Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
-Route::get('/dosen', [DosenController::class, 'index']);
+Route::get('/admin','App\Http\Controllers\Admin@index');
+Route::get('/admin-kelola-dokumen','App\Http\Controllers\Admin@kelolaDokumen');
+Route::get('/admin-buat-jadwal','App\Http\Controllers\Admin@buatJadwal');
+Route::get('/admin-buat-jadwal','App\Http\Controllers\Admin@lihatJadwal');
 
-Route::get('/admin', [AdminController::class, 'index']);
-Route::get('/admin', [AdminController::class, 'index']);
-Route::get('/admin', [AdminController::class, 'index']);
+
+Route::get('/mahasiswa','App\Http\Controllers\MahasiswaController@index');
+
+
+Route::get('/dosen','App\Http\Controllers\DosenController@index');
+
 

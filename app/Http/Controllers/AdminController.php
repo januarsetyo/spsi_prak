@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Dokumen;
+use App\Models\Jadwal;
 
 class AdminController extends Controller
 {
@@ -13,9 +15,9 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('admin.admin');
+        return view('layouts.admin');
     }
-    
+
     public function kelolaDokumen()
     {
         return view('admin.dokumen');
@@ -28,6 +30,7 @@ class AdminController extends Controller
 
     public function lihatJadwal()
     {
+        $jadwal = Jadwal::all();
         return view('admin.jadwal');
     }
 
