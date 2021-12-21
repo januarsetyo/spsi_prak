@@ -11,7 +11,7 @@
 <body>
     <div class="rectangle-4"></div>
   <a class="nav-linkk" href="/login">Login</a>
-  <h1 class="selamat-datang-di-si">SELAMAT DATANG <br />DI SISTEM PENGELOLAAN HONOR PKL</h1>
+  <h1 class="selamat-datang-di-si">SELAMAT DATANG Aku coba nambahi ng welcome.blade <br />DI SISTEM PENGELOLAAN HONOR PKL</h1>
   <img
   class="college-2"
   src=./images/artboard.png
