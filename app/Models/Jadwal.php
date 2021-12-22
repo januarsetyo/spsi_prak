@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Jadwal extends Model
 {
-    protected $jadwal= 'sidang';
+    protected $table= 'sidang';
 
     protected $fillable =[
         'ID_SIDANG',

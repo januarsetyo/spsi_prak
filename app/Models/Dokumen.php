@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Dokumen extends Model
 {
-    protected $doc= 'dokumen';
+    protected $table= 'dokumen';
 
     protected $fillable =[
       'ID_DOKUMEN',

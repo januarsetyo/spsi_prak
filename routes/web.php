@@ -27,6 +27,9 @@ Route::get('/admin-jadwal','App\Http\Controllers\Admin@lihatJadwal');
 Route::get('/mahasiswa','App\Http\Controllers\MahasiswaController@index');
 
 
-Route::get('/dosen','App\Http\Controllers\DosenController@index');
+Route::get('/dosen','App\Http\Controllers\Dosen@index');
+Route::get('/dosen-dokumen','App\Http\Controllers\Dosen@dokumen');
+Route::get('/dosen-jadwal','App\Http\Controllers\Dosen@dokumen');
+
 
 
