@@ -9,7 +9,7 @@
 			<th>NIM</th>
 			<th>Nama Dokumen</th>
             {{-- <th>Detail</th> --}}
-            {{-- <th>Delete</th> --}}s
+            {{-- <th>Delete</th> --}}
 		</tr>
 	</thead>
 	<tbody>

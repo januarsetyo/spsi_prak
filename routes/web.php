@@ -27,14 +27,14 @@ Route::get('/admin-jadwal','App\Http\Controllers\Admin@lihatJadwal');
 
 
 Route::get('/mahasiswa','App\Http\Controllers\Mahasiswa@index');
-Route::get('/mahasiswa-jadwal','App\Http\Controllers\Mahasiswa@index');
-Route::get('/mahasiswa-tambah-dokumen','App\Http\Controllers\Mahasiswa@index');
-Route::get('/mahasiswa-dokumen','App\Http\Controllers\Mahasiswa@index');
+Route::get('/mahasiswa-jadwal','App\Http\Controllers\Mahasiswa@jadwal');
+Route::get('/mahasiswa-tambah-dokumen','App\Http\Controllers\Mahasiswa@dokumen');
+Route::get('/mahasiswa-dokumen','App\Http\Controllers\Mahasiswa@dokumen');
 
 
 Route::get('/dosen','App\Http\Controllers\Dosen@index');
 Route::get('/dosen-dokumen','App\Http\Controllers\Dosen@dokumen');
-Route::get('/dosen-jadwal','App\Http\Controllers\Dosen@dokumen');
+Route::get('/dosen-jadwal','App\Http\Controllers\Dosen@jadwal');
 
 
 
