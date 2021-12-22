@@ -185,7 +185,7 @@
                         <h2 class="text-center">User Login</h2>
 
 
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <label>Login Sebagai:
                               <select>
                                 <option value="lele">Mahasiswa</option>
@@ -193,22 +193,22 @@
                                 <option value="teri">PAA</option>
                               </select>
                             </label>
-                        </div>
+                        </div> --}}
                         <div class="form-group">
 
                             <input type="text" class="form-control" placeholder="User Name (NIM/NIP/NIK)" required="required">
 
                         </div>
 
-                        <div class="form-group">
+                        {{-- <div class="form-group">
 
                             <input type="text" class="form-control" placeholder="Password" required="required">
 
-                        </div>
+                        </div> --}}
 
                         <div class="form-group text-center">
 
-                            <button type="submit" class="btn btn-blue btn-block">Login</button>
+                            <button type="submit" href="/auth" class="btn btn-blue btn-block">Login</button>
 
                         </div>
 

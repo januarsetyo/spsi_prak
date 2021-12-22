@@ -16,7 +16,9 @@ use App\Http\Controllers\DosenController;
 |
 */
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/','App\Http\Controllers\HomeController@index');
+Route::get('/auth','App\Http\Controllers\HomeController@authenticate');
+
 
 Route::get('/admin','App\Http\Controllers\Admin@index');
 Route::get('/admin-kelola-dokumen','App\Http\Controllers\Admin@kelolaDokumen');
@@ -24,7 +26,10 @@ Route::get('/admin-buat-jadwal','App\Http\Controllers\Admin@buatJadwal');
 Route::get('/admin-jadwal','App\Http\Controllers\Admin@lihatJadwal');
 
 
-Route::get('/mahasiswa','App\Http\Controllers\MahasiswaController@index');
+Route::get('/mahasiswa','App\Http\Controllers\Mahasiswa@index');
+Route::get('/mahasiswa-jadwal','App\Http\Controllers\Mahasiswa@index');
+Route::get('/mahasiswa-tambah-dokumen','App\Http\Controllers\Mahasiswa@index');
+Route::get('/mahasiswa-dokumen','App\Http\Controllers\Mahasiswa@index');
 
 
 Route::get('/dosen','App\Http\Controllers\Dosen@index');

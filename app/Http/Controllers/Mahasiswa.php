@@ -15,7 +15,20 @@ class Mahasiswa extends Controller
      */
     public function index()
     {
-        return view('mahasiswa/mahasiswa');
+        return view('layouts.mahasiswa');
+    }
+
+
+    public function dokumen()
+    {
+        $dok = dokumen::all();
+        return view('mahasiswa.dokumen',['dokumen'=>$dok]);
+    }
+
+    public function jadwal()
+    {
+        $sidang = Jadwal::all();
+        return view('mahasiswa.jadwal',['sidang'=>$sidang]);
     }
 
     /**

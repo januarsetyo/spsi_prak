@@ -17,19 +17,19 @@ class Dosen extends Controller
      */
     public function index()
     {
-        return view('dosen/dosen');
+        return view('layouts.dosen');
     }
 
     public function dokumen()
     {
         $dok = dokumen::all();
-        return view('admin.dokumen',['dokumen'=>$dok]);
+        return view('dosen.dokumen',['dokumen'=>$dok]);
     }
 
     public function jadwal()
     {
         $sidang = Jadwal::all();
-        return view('admin.jadwal',['sidang'=>$sidang]);
+        return view('dosen.jadwal',['sidang'=>$sidang]);
     }
 
     /**
