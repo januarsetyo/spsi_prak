@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Mahasiswa;
+use App\Models\Jadwal;
+use App\Models\Dokumen;
 use Illuminate\Http\Request;
 
-class MahasiswaController extends Controller
+class Mahasiswa extends Controller
 {
     /**
      * Display a listing of the resource.
