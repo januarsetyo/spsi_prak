@@ -1,6 +1,6 @@
-@extends('admin/admin')
+@extends('layouts/admin')
 
-@section('tabel')
+@section('content')
 
 <div class="col-lg-10">
     <div class="users-table table-wrapper">
@@ -15,10 +15,12 @@
         <th scope="col">Email</th>
         <th scope="col">created at</th>
         <th scope="col">Deleted at</th>
+        <th scope="col">edit</th>
+        <th scope="col">Deleted</th>
       </tr>
     </thead>
     <tbody>
-        @foreach ($kecamatan as $datakecamatan)
+        {{-- @foreach ($kecamatan as $datakecamatan)
         <tr>
             <td scope="row">{{ $datakecamatan->id}}</td>
             <td scope="row">{{ $datakecamatan->nama }}</td>
@@ -31,17 +33,17 @@
             <td>
               <form action="/edit-dosen" method="post" class="d-inline">
                   @csrf
-                  <input type="hidden" name="id" value="{{ $datakecamatan->id }}">
+                  <input type="hidden" name="id" value="{{ $datakecamatan->id }}"> --}}
                   <button class="btn btn-primary tombol border-0">
                       Edit
                   </button>
-              </form>
+              {{-- </form>
             </td>
-            <td>
+            <td> --}}
               <a href="/hapus-dosen{{$datakecamatan->id}}" class="btn btn-primary tombol border-0">Hapus</a>
-            </td>
+            {{-- </td>
           </tr>
-        @endforeach
+        @endforeach --}}
 
     </tbody>
   </table>
