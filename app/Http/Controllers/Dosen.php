@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Dosen;
 use Illuminate\Http\Request;
 
-class DosenController extends Controller
+use App\Models\Dokumen;
+
+use App\Models\Jadwal;
+
+class Dosen extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,6 +18,18 @@ class DosenController extends Controller
     public function index()
     {
         return view('dosen/dosen');
+    }
+
+    public function dokumen()
+    {
+        $dok = dokumen::all();
+        return view('admin.dokumen',['dokumen'=>$dok]);
+    }
+
+    public function jadwal()
+    {
+        $sidang = Jadwal::all();
+        return view('admin.jadwal',['sidang'=>$sidang]);
     }
 
     /**

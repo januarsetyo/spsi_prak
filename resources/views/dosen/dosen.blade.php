@@ -1,6 +1,6 @@
-@extends('admin/admin')
+@extends('layouts.dosen')
 
-@section('tabel')
+@section('content')
 
 <div class="col-lg-10">
     <div class="users-table table-wrapper">
