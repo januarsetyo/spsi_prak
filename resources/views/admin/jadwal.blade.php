@@ -14,7 +14,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		@foreach($jadwal as $j)
+		@foreach($sidang as $s)
 	<tr>
         <td>{{ $j->ID_SIDANG }}</td>
 		<td>{{ $j->ID_DOSEN }}</td>

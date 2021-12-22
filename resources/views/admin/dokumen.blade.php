@@ -13,11 +13,11 @@
 		</tr>
 	</thead>
 	<tbody>
-		@foreach($jadwal as $j)
+		@foreach($dokumen as $d)
 	<tr>
-        <td>{{ $j->ID_DOKUMEN }}</td>
-		<td>{{ $j->NIM }}</td>
-        <td>{{ $j->NAMA_DOKUMEN }}</td>
+        <td>{{ $d->ID_DOKUMEN }}</td>
+		<td>{{ $d->NIM }}</td>
+        <td>{{ $d->NAMA_DOKUMEN }}</td>
         {{-- <td>
             <form action="{{ url('/jadwal-detail') }}" method="get">
                 <input hidden value="{{ $j->ID_SIDANG }}" name="ID_SIDANG">
