@@ -21,7 +21,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/admin','App\Http\Controllers\Admin@index');
 Route::get('/admin-kelola-dokumen','App\Http\Controllers\Admin@kelolaDokumen');
 Route::get('/admin-buat-jadwal','App\Http\Controllers\Admin@buatJadwal');
-Route::get('/admin-buat-jadwal','App\Http\Controllers\Admin@lihatJadwal');
+Route::get('/admin-jadwal','App\Http\Controllers\Admin@lihatJadwal');
 
 
 Route::get('/mahasiswa','App\Http\Controllers\MahasiswaController@index');

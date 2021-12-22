@@ -7,13 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Dokumen extends Model
 {
-    protected $jadwal= 'sidang';
+    protected $doc= 'dokumen';
 
     protected $fillable =[
-        'ID_SIDANG',
-        'ID_DOSEN',
-        'NIM',
-        'JADWAL_SIDANG'
+      'ID_DOKUMEN',
+      'NIM',
+      'NAMA_DOKUMEN'
 
     ];
 }

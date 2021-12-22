@@ -90,7 +90,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="/admin-dokumen">Dokumen</a>
+                        <a class="collapse-item" href="/admin-kelola-dokumen">Dokumen</a>
                         <a class="collapse-item" href="/admin-buat-jadwal">Buat Jadwal</a>
                         <a class="collapse-item" href="/admin-jadwal">Lihat Jadwal</a>
                         {{-- <a class="collapse-item" href="utilities-other.html">Other</a> --}}
@@ -98,7 +98,7 @@
                 </div>
             </li>
 
-
+{{--
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
@@ -111,7 +111,7 @@
 
                     </div>
                 </div>
-            </li>
+            </li> --}}
 
             <!-- Divider -->
             {{-- <hr class="sidebar-divider"> --}}

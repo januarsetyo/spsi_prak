@@ -20,7 +20,8 @@ class Admin extends Controller
 
     public function kelolaDokumen()
     {
-        return view('admin.dokumen');
+        $doc = dokumen::all();
+        return view('admin.dokumen',['dokumen'=>$doc]);
     }
 
     public function buatJadwal()
@@ -31,10 +32,8 @@ class Admin extends Controller
     public function lihatJadwal()
     {
         $jadwal = Jadwal::all();
-        return view('admin.jadwal');
+        return view('admin.jadwal',['sidang'=>$jadwal]);
     }
-
-
 
 
     /**

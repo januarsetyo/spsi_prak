@@ -5,9 +5,10 @@
 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 	<thead>
 		<tr>
-            <th>Jadwal Sidang</th>
+            <th>ID SIDANG</th>
 			<th>ID Dosen</th>
 			<th>NIM</th>
+            <th>Jadwal Sidang</th>
             <th>Detail</th>
             {{-- <th>Delete</th> --}}
 		</tr>
@@ -15,9 +16,10 @@
 	<tbody>
 		@foreach($jadwal as $j)
 	<tr>
-        <td>{{ $j->JADWAL_SIDANG }}</td>
+        <td>{{ $j->ID_SIDANG }}</td>
 		<td>{{ $j->ID_DOSEN }}</td>
         <td>{{ $j->NIM }}</td>
+        <td>{{ $j->JADWAL_SIDANG }}</td>
         <td>
             <form action="{{ url('/jadwal-detail') }}" method="get">
                 <input hidden value="{{ $j->ID_SIDANG }}" name="ID_SIDANG">
