@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Dokumen;
 use App\Models\Jadwal;
+use App\Models\Honor;
 
 class Admin extends Controller
 {
@@ -19,11 +20,16 @@ class Admin extends Controller
     {
         return view('layouts.admin');
     }
+    public function honor()
+    {
+        $hon = honor::all();
+        return view('admin.pengajuan-honor',['honor'=>$hon]);
+    }
 
     public function kelolaDokumen()
     {
         $dok = dokumen::all();
-        return view('admin.dokumen',['dokumen'=>$dok]);
+        return view('admin.kelola-dokumen',['dokumen'=>$dok]);
     }
 
     public function buatJadwal()

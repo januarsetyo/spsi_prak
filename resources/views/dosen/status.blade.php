@@ -1,4 +1,4 @@
-@extends('layouts/admin')
+@extends('layouts/dosen')
 
 @section('content')
 
@@ -7,16 +7,8 @@
 <table class="table table-bordered border-primary">
     <thead>
       <tr>
-        <th scope="col">id dosen</th>
-        <th scope="col">Nama</th>
-        <th scope="col">Alamat</th>
-        <th scope="col">No Hp</th>
-        <th scope="col">Jenis Kelamin</th>
-        <th scope="col">Email</th>
-        <th scope="col">created at</th>
-        <th scope="col">Deleted at</th>
-        <th scope="col">edit</th>
-        <th scope="col">Deleted</th>
+        <th scope="col">tanggal pengajuan</th>
+        <th scope="col">Detail</th>
       </tr>
     </thead>
     <tbody>
@@ -34,13 +26,13 @@
               <form action="/edit-dosen" method="post" class="d-inline">
                   @csrf
                   <input type="hidden" name="id" value="{{ $datakecamatan->id }}"> --}}
-                  <button class="btn btn-primary tombol border-0">
+                  {{-- <button class="btn btn-primary tombol border-0">
                       Edit
-                  </button>
+                  </button> --}}
               {{-- </form>
             </td>
             <td> --}}
-              <a href="/hapus-dosen{{$datakecamatan->id}}" class="btn btn-primary tombol border-0">Hapus</a>
+              {{-- <a href="/hapus-dosen{{$datakecamatan->id}}" class="btn btn-primary tombol border-0">Hapus</a> --}}
             {{-- </td>
           </tr>
         @endforeach --}}

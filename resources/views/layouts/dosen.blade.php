@@ -90,7 +90,7 @@
                     data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         {{-- <h6 class="collapse-header"></h6> --}}
-                        <a class="collapse-item" href="/dosen-dokumen">Dokumen</a>
+                        {{-- <a class="collapse-item" href="/dosen-dokumen">Dokumen</a> --}}
                         {{-- <a class="collapse-item" href="/admin-buat-jadwal">Buat Jadwal</a> --}}
                         <a class="collapse-item" href="/dosen-jadwal">Lihat Jadwal</a>
                         {{-- <a class="collapse-item" href="utilities-other.html">Other</a> --}}

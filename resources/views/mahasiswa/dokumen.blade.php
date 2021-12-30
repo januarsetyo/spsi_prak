@@ -5,11 +5,10 @@
 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 	<thead>
 		<tr>
-            <th>ID Dokumen</th>
 			<th>NIM</th>
 			<th>Nama Dokumen</th>
-            {{-- <th>Detail</th> --}}
-            {{-- <th>Delete</th> --}}
+            <th>Detail</th>
+
 		</tr>
 	</thead>
 	<tbody>

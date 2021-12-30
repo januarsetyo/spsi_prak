@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Dokumen;
 
 use App\Models\Jadwal;
+use App\Models\Honor;
 
 class Dosen extends Controller
 {
@@ -19,7 +20,11 @@ class Dosen extends Controller
     {
         return view('layouts.dosen');
     }
-
+    public function honor()
+    {
+        $hon = honor::all();
+        return view('dosen.status',['honor'=>$hon]);
+    }
     public function dokumen()
     {
         $dok = dokumen::all();

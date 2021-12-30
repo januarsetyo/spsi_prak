@@ -1,28 +1,27 @@
-@extends('layouts.mahasiswa')
+@extends('layouts.admin')
 
 @section('content')
-
 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 	<thead>
 		<tr>
-            <th>Jadwal Sidang</th>
-            <th>Detail</th>
+			<th>NIM</th>
+			<th>Nama Dokumen</th>
+            <th>cek</th>
             {{-- <th>Delete</th> --}}
 		</tr>
 	</thead>
 	<tbody>
-		@foreach($sidang as $s)
+		@foreach($dokumen as $d)
 	<tr>
-        <td>{{ $j->ID_SIDANG }}</td>
-		<td>{{ $j->ID_DOSEN }}</td>
-        <td>{{ $j->NIM }}</td>
-        <td>{{ $j->JADWAL_SIDANG }}</td>
-        <td>
+        <td>{{ $d->ID_DOKUMEN }}</td>
+		<td>{{ $d->NIM }}</td>
+        <td>{{ $d->NAMA_DOKUMEN }}</td>
+        {{-- <td>
             <form action="{{ url('/jadwal-detail') }}" method="get">
                 <input hidden value="{{ $j->ID_SIDANG }}" name="ID_SIDANG">
                 <button type="submit" class="btn btn-info btn-sm")>Edit</button>
             </form>
-        </td>
+        </td> --}}
         {{-- <td>
             <a href="{{ url('/santri-hapus',$s->IDSANTRI) }}"><button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Delete</button></a>
         </td> --}}
@@ -32,5 +31,5 @@
 
 </table>
 
-
 @endsection
+

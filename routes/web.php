@@ -24,16 +24,18 @@ Route::get('/admin','App\Http\Controllers\Admin@index');
 Route::get('/admin-kelola-dokumen','App\Http\Controllers\Admin@kelolaDokumen');
 Route::get('/admin-buat-jadwal','App\Http\Controllers\Admin@buatJadwal');
 Route::get('/admin-jadwal','App\Http\Controllers\Admin@lihatJadwal');
+Route::get('/admin-pengajuan-honor','App\Http\Controllers\Admin@honor');
 
 
 Route::get('/mahasiswa','App\Http\Controllers\Mahasiswa@index');
 Route::get('/mahasiswa-jadwal','App\Http\Controllers\Mahasiswa@jadwal');
-Route::get('/mahasiswa-tambah-dokumen','App\Http\Controllers\Mahasiswa@dokumen');
+Route::get('/mahasiswa-tambah-dokumen','App\Http\Controllers\Mahasiswa@unggahdokumen');
 Route::get('/mahasiswa-dokumen','App\Http\Controllers\Mahasiswa@dokumen');
 
 
 Route::get('/dosen','App\Http\Controllers\Dosen@index');
 Route::get('/dosen-dokumen','App\Http\Controllers\Dosen@dokumen');
+Route::get('/dosen-status','App\Http\Controllers\Dosen@honor');
 Route::get('/dosen-jadwal','App\Http\Controllers\Dosen@jadwal');
 
 

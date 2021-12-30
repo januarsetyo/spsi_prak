@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Jadwal;
 use App\Models\Dokumen;
+use App\Models\Unggah;
 use Illuminate\Http\Request;
 
 class Mahasiswa extends Controller
@@ -17,12 +18,17 @@ class Mahasiswa extends Controller
     {
         return view('layouts.mahasiswa');
     }
-
+ 
 
     public function dokumen()
     {
         $dok = dokumen::all();
         return view('mahasiswa.dokumen',['dokumen'=>$dok]);
+    }
+    public function unggahdokumen()
+    {
+        $dok = dokumen::all();
+        return view('mahasiswa.tambah.dokumen',['dokumen'=>$dok]);
     }
 
     public function jadwal()

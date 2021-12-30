@@ -5,9 +5,6 @@
 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 	<thead>
 		<tr>
-            <th>ID SIDANG</th>
-			<th>ID Dosen</th>
-			<th>NIM</th>
             <th>Jadwal Sidang</th>
             <th>Detail</th>
             {{-- <th>Delete</th> --}}
